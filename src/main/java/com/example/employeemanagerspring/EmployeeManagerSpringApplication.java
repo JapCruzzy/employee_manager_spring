@@ -2,12 +2,14 @@ package com.example.employeemanagerspring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
-public class EmployeemanagerspringApplication {
+@EnableTransactionManagement
+public class EmployeeManagerSpringApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EmployeemanagerspringApplication.class, args);
+        SpringApplication.run(EmployeeManagerSpringApplication.class, args);
     }
 
 
