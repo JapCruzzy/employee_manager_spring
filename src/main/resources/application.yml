@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    username: jasper
+    url: jdbc:postgresql://localhost:5432/employeemanagement
+    password: admin
+  sql:
+    init:
+      platform: postgres
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+
+server:
+  port: '8090'
